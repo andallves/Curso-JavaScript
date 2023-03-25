@@ -10,11 +10,21 @@
 
 <body>
   <!--
-    Get the userName
-
+    Get the user Name
+    -> use the window.document.body.innerHTML to insert in the page document the users informations.
+  
   -->
   <script>
-    const
+    const name = prompt('Tell me what is your name: ');
+    document.body.innerHTML += `Your name is: <strong>${name}</strong> <br/>`;
+    document.body.innerHTML += `Your name has <strong>${name.length}</strong> letters <br/>`;
+    document.body.innerHTML += `The secund letter of your name is: <strong>${name[1]}</strong> <br/>`;
+    document.body.innerHTML += `What's the index of the letter 'a' in your name?  It's in <strong>${name.toLowerCase().indexOf('a')}</strong> <br/>`;
+    document.body.innerHTML += `What's the last index of the letter 'a' in your name?  It's in <strong>${name.lastIndexOf('a')}</strong> <br/>`;
+    document.body.innerHTML += `The 3 last letter in your name are: <strong>${name.slice(-3)}</strong> <br/>`;
+    document.body.innerHTML += `The words in your name are: <strong>${name.split(' ')}</strong> <br/>`;
+    document.body.innerHTML += `Your name in uppercase: <strong>${name.toUpperCase()}</strong> <br/>`;
+    document.body.innerHTML += `Your name in lowercasse: <strong>${name.toLowerCase()}</strong> <br/>`;
   </script>
 </body>
 

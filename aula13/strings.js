@@ -17,18 +17,19 @@ console.log(thirdString.concat(' in a beautiful day.')); // -> Those are three w
 console.log(thirdString + ' in a beautiful day.');
 console.log(`${thirdString} in a beautiful day.`);
 
-console.log(thirdString.indexOf('ext')); // -> Return the index where the word that I pass start, if it don't find any word, it will be return -1
-console.log(thirdString.indexOf('x', 2)); // -> I'm passing two params, first the ward that I want to find, and the secund value is start point where to beggin to looking for.
-console.log(thirdString.lastIndexOf('x')); // -> This method start the search from end to start.
+console.log(thirdString.indexOf('aut')); // -> Return the index where the word that I pass start, if it don't find any word, it will be return -1
+console.log(thirdString.indexOf('a', 2)); // -> I'm passing two params, first the ward that I want to find, and the secund value is start point where to beggin to looking for.
+console.log(thirdString.lastIndexOf('a')); // -> This method start the search from end to start.
+console.log(thirdString.lastIndexOf('a', 2));
 
 // Regular Expression
 console.log(thirdString.match(/[a-z]/)); // -> This method return the first element, if It belongs some word.
 console.log(thirdString.match(/[a-z]/g)); // -> Now It will be returned an array with all elements lowercase in my string;
-console.log(thirdString.search(/x/)); // -> This method return the index of the word that I informed.
-console.log(thirdString.search(/x/g));
+console.log(thirdString.search(/a/)); // -> This method return the index of the word that I informed.
+console.log(thirdString.search(/a/g));
 console.log(thirdString.replace('A', 'Another')); // -> This method change the word.
-console.log(thirdString.replace(/x/g, '#')); // -> This way change all 'x' letter was found.
-console.log(thirdString.replace(/t/, '1')); // -> This way change the first 't' was found.
+console.log(thirdString.replace(/a/g, '#')); // -> This way change all 'x' letter was found.
+console.log(thirdString.replace(/s/, '1')); // -> This way change the first 't' was found.
 
 console.log(thirdString.length); // -> This is a atribute that return the length of the string
 
