@@ -22,11 +22,11 @@ const myScoop = (e) => {
     }
 
     const person = createPerson(name, lastname, weight, height);
+    people.push(person);
 
     const print = document.querySelector('#print');
     print.innerHTML += `<p>${person.name} ${person.lastname} ${person.weight} ${person.height} </p>`;
 
-    people.push(person);
   });
 
 
