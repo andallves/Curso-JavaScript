@@ -16,23 +16,24 @@ const container = () => {
     const height = parseFloat(document.querySelector('#height').value);
 
     const imc = (weight / (height ** 2))
-    console.log(imc.toFixed(2))
 
-    if (imc < 18.5) {
-      resul.innerHTML = `Seu IMC é ${imc.toFixed(2)}(Abaixo do peso)`;
-    } else if (imc >= 18.5 && imc < 25) {
-      resul.innerHTML = `Seu IMC é ${imc.toFixed(2)}(Peso normal)`;
-    } else if (imc >= 25 && imc < 29.9) {
-      resul.innerHTML = `Seu IMC é ${imc.toFixed(2)}(Sobrepeso)`;
-    } else if (imc >= 30 && imc < 35) {
-      const message = `Seu IMC é ${imc..toFixed(2)}(Obesidade grau l)`;
-    } else if (imc >= 35 && imc < 40) {
-      resul.innerHTML = `Seu IMC é ${imc.toFixed(2)}(Obesidade grau 2)`;
-    } else if (imc >= 40) {
-      resul.innerHTML = `Seu IMC é ${imc.toFixed(2)}(Obesidade grau 3)`;
+    if (resul) {
+      document.createElement
     }
 
-    console.log(imc)
+    if (imc < 18.5) {
+      resul.innerHTML = `Seu IMC é ${imc.toFixed(1)} (Abaixo do peso)`;
+    } else if (imc >= 18.5 && imc < 25) {
+      resul.innerHTML = `Seu IMC é ${imc.toFixed(1)} (Peso normal)`;
+    } else if (imc >= 25 && imc < 29.9) {
+      resul.innerHTML = `Seu IMC é ${imc.toFixed(1)} (Sobrepeso)`;
+    } else if (imc >= 30 && imc < 35) {
+      const message = `Seu IMC é ${imc.toFixed(1)} (Obesidade grau l)`;
+    } else if (imc >= 35 && imc < 40) {
+      resul.innerHTML = `Seu IMC é ${imc.toFixed(1)} (Obesidade grau 2)`;
+    } else if (imc >= 40) {
+      resul.innerHTML = `Seu IMC é ${imc.toFixed(1)} (Obesidade grau 3)`;
+    }
 
   })
 
