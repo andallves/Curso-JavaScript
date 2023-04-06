@@ -32,7 +32,7 @@ const chooseOperation = (operator) => {
       return;
 
     case '-':
-      title.innerHTML = 'TABUADA DE ADIÇÃO';
+      title.innerHTML = 'TABUADA DE SUBTRAÇÃO';
       for (let j = 1; j <= 3; j++) {
         setTable(j);
         for (let i = 1; i <= 10; i++) {
@@ -42,7 +42,7 @@ const chooseOperation = (operator) => {
       return;
 
     case '/':
-      title.innerHTML = 'TABUADA DE ADIÇÃO';
+      title.innerHTML = 'TABUADA DE DIVISÃO';
       for (let j = 1; j <= 3; j++) {
         setTable(j);
         for (let i = 1; i <= 10; i++) {
@@ -52,7 +52,7 @@ const chooseOperation = (operator) => {
       return;
 
     case '*':
-      title.innerHTML = 'TABUADA DE ADIÇÃO';
+      title.innerHTML = 'TABUADA DE MULTIPLICAÇÃO';
       for (let j = 1; j <= 3; j++) {
         setTable(j);
         for (let i = 1; i <= 10; i++) {
