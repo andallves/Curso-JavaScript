@@ -1,0 +1,12 @@
+const paragraphs = document.querySelector('.paragraphs');
+const ps = paragraphs.querySelectorAll('p');
+
+const styleBody = getComputedStyle(document.body);
+const backgroundBodyColor = styleBody.backgroundColor;
+console.log(backgroundBodyColor)
+
+for (let p of ps) {
+  p.style.backgroundColor = `${backgroundBodyColor}`;
+  p.style.color = '#fff'
+
+}

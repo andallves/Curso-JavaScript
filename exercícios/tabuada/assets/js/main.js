@@ -9,11 +9,8 @@ form.addEventListener('submit', (e) => {
 
   const inputOperator = e.target.querySelector('#operator');
   const operator = inputOperator.value;
-  const again = true;
-  setTable(null, again);
+  
   chooseOperation(operator);
-
-
 
 })
 
