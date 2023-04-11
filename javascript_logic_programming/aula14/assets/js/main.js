@@ -7,6 +7,6 @@ console.log(backgroundBodyColor)
 
 for (let p of ps) {
   p.style.backgroundColor = `${backgroundBodyColor}`;
-  p.style.color = '#fff'
+  p.style.color = '#fff';
 
 }

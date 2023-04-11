@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital@1&display=swap');
+:root {
+  --primary-color: rgb(1, 23, 83);
+  --primary-color-dark: rgb(16, 13, 58);
+  --font-color: rgb(39, 39, 39);
+  --font: 'Open Sans', sans-serif;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--font-color);
+  font-size: 1.2em;
+}
+
+.container{
+  width: 600px;
+  max-width: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  font-family: var(--font);
+  border-radius: 5px;
+}
+.container h1 {
+  font-size: 2em;
+  font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+.container p {
+  font-size: 3.5em;
+  transition: .5s;
+}
+.paused {
+  color: red;
+}
+
+.btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.start, .pause, .restart {
+  padding: .5rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Schibsted Grotesk', sans-serif;
+  background-color: var(--primary-color);
+  border-radius: .3em;
+  cursor: pointer;
+  transition: .5s;
+  border: none;
+}
+.start:hover, .pause:hover, .restart:hover {
+  background-color: var(--primary-color-dark);
+}
