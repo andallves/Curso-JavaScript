@@ -1,14 +1,21 @@
 function timeConversion(s) {
   // Write your code here
-  let hour = s.slice(0, -2);
+  const zoneTime = s.slice(-2)
+  let hour = Number(s.slice(0, 2));
+  let hourTime = s.slice(0, -2);
 
+  if (zoneTime === 'AM') {
+    if (hour === 12) return hourTime.replace('12', '00');
+    return hourTime;
+  }
 
-  console.log(hour)
-  const todayData = '2023-04-10T'
-
-  const data = new Date(todayData + hour);
-  return data.setHours()
+  if (zoneTime === 'PM' || hour >= 12) {
+    if (hour === 12) return hourTime;
+    let time = hourTime.slice(2);
+    let hour24 = hour += 12;
+    return `${hour24}${time}`;
+  }
 }
 
-const s = '12:00:03PM';
+const s = '12:45:54AM';
 console.log(timeConversion(s))
