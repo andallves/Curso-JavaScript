@@ -15,7 +15,7 @@ console.log(numbersBiggerThen10)
 
 
 // Using the filter function
-function callbackFilter(value, index, array) {
+function callbackFilter(value, /*index, array*/) {
   if (value > 10) {
     return true;
   } else {

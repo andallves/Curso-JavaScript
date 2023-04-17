@@ -1,21 +1,19 @@
-function timeConversion(s) {
+function kangaroo(x1, v1, x2, v2) {
   // Write your code here
-  const zoneTime = s.slice(-2)
-  let hour = Number(s.slice(0, 2));
-  let hourTime = s.slice(0, -2);
+  const itsPossible = ((x2 > x1 && v2 > v1) || (x1 > x2 && v1 > v2));
+  if (itsPossible) return 'NO';
 
-  if (zoneTime === 'AM') {
-    if (hour === 12) return hourTime.replace('12', '00');
-    return hourTime;
-  }
+  let kangaroo1 = x1;
+  let kangaroo2 = x2;
 
-  if (zoneTime === 'PM' || hour >= 12) {
-    if (hour === 12) return hourTime;
-    let time = hourTime.slice(2);
-    let hour24 = hour += 12;
-    return `${hour24}${time}`;
+  for (let i = 1; i < 1000; i++) {
+    kangaroo1 += v1;
+    kangaroo2 += v2;
+    if (kangaroo1 === kangaroo2) return 'YES';
+    console.log(kangaroo1, kangaroo2);
+    i++
   }
+  return 'NO';
 }
 
-const s = '12:45:54AM';
-console.log(timeConversion(s))
+console.log(kangaroo(4523, 8092, 9419, 8076));
